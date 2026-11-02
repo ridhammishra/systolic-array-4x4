@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Nov  2 12:12:54 2026
+# Process ID         : 17548
+# Current directory  : D:/vlsi/syntasisable dip/syntasisable dip.runs/impl_1
+# Command line       : vivado.exe -log dip_fpga_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dip_fpga_top.tcl -notrace
+# Log file           : D:/vlsi/syntasisable dip/syntasisable dip.runs/impl_1/dip_fpga_top.vdi
+# Journal file       : D:/vlsi/syntasisable dip/syntasisable dip.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-3IIG12NI
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7445HS w/ Radeon 740M Graphics     
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16396 MB
+# Swap memory        : 16396 MB
+# Total Virtual      : 32792 MB
+# Available Virtual  : 16810 MB
+#-----------------------------------------------------------
+source dip_fpga_top.tcl -notrace
