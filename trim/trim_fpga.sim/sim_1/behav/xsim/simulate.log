@@ -1,0 +1,19 @@
+Time resolution is 1 ps
+sw=0  led=20  OK
+sw=1  led=15  OK
+sw=2  led=12  OK
+sw=3  led=7  OK
+sw=4  led=48  OK
+sw=5  led=39  OK
+sw=6  led=32  OK
+sw=7  led=23  OK
+sw=8  led=76  OK
+sw=9  led=63  OK
+sw=10  led=52  OK
+sw=11  led=39  OK
+sw=12  led=104  OK
+sw=13  led=87  OK
+sw=14  led=72  OK
+sw=15  led=55  OK
+>>> PASS: board wrapper shows all 16 results correctly <<<
+$finish called at time : 695 ns : File "D:/engineering/enginering ece/vivado/trim_fpga/trim_fpga.srcs/sim_1/new/tb_nexys.v" Line 44
