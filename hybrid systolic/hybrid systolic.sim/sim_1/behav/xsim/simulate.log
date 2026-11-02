@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+PASS scaleup mapping
+PASS scaleout mapping
+ALL HYBRID TESTS PASSED
+$finish called at time : 20 ns : File "C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/tb/hybridTb.v" Line 58
+The current simulation has finished. Please use 'restart' to begin a new simulation.
+$finish called at time : 20 ns : File "C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/tb/hybridTb.v" Line 58

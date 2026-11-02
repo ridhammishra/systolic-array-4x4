@@ -1,0 +1,376 @@
+
+*** Running vivado
+    with args -log nexysTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexysTop.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 04-oct-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Sun Nov  1 22:17:41 2026
+# Process ID         : 2720
+# Current directory  : C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/build/hybridNexys.runs/synth_1
+# Command line       : vivado.exe -log nexysTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nexysTop.tcl
+# Log file           : C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/build/hybridNexys.runs/synth_1/nexysTop.vds
+# Journal file       : C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/build/hybridNexys.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-3IIG12NI
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 7445HS w/ Radeon 740M Graphics     
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16396 MB
+# Swap memory        : 16396 MB
+# Total Virtual      : 32792 MB
+# Available Virtual  : 11183 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Nov  1 22:17:41 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source nexysTop.tcl -notrace
+Command: synth_design -top nexysTop -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20368
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1369.797 ; gain = 578.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nexysTop' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/nexysTop.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hybridCore' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:89]
+INFO: [Synth 8-6157] synthesizing module 'scaleUpArray' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:1]
+	Parameter N bound to: 4 - type: integer 
+	Parameter W bound to: 8 - type: integer 
+	Parameter ACC bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'scaleUpArray' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:1]
+WARNING: [Synth 8-689] width (256) of port connection 'aBus' does not match port width (128) of module 'scaleUpArray' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:97]
+WARNING: [Synth 8-689] width (256) of port connection 'bBus' does not match port width (128) of module 'scaleUpArray' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:97]
+WARNING: [Synth 8-689] width (1536) of port connection 'cBus' does not match port width (384) of module 'scaleUpArray' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:97]
+INFO: [Synth 8-6157] synthesizing module 'scaleOutArray' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:61]
+	Parameter W bound to: 8 - type: integer 
+	Parameter ACC bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'scaleOutPod' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+	Parameter W bound to: 8 - type: integer 
+	Parameter ACC bound to: 24 - type: integer 
+	Parameter ROWBASE bound to: 0 - type: integer 
+	Parameter COLBASE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'scaleOutPod' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+INFO: [Synth 8-6157] synthesizing module 'scaleOutPod__parameterized0' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+	Parameter W bound to: 8 - type: integer 
+	Parameter ACC bound to: 24 - type: integer 
+	Parameter ROWBASE bound to: 0 - type: integer 
+	Parameter COLBASE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'scaleOutPod__parameterized0' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+INFO: [Synth 8-6157] synthesizing module 'scaleOutPod__parameterized1' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+	Parameter W bound to: 8 - type: integer 
+	Parameter ACC bound to: 24 - type: integer 
+	Parameter ROWBASE bound to: 2 - type: integer 
+	Parameter COLBASE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'scaleOutPod__parameterized1' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+INFO: [Synth 8-6157] synthesizing module 'scaleOutPod__parameterized2' [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+	Parameter W bound to: 8 - type: integer 
+	Parameter ACC bound to: 24 - type: integer 
+	Parameter ROWBASE bound to: 2 - type: integer 
+	Parameter COLBASE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'scaleOutPod__parameterized2' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'scaleOutArray' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'hybridCore' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'nexysTop' (0#1) [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/nexysTop.v:1]
+WARNING: [Synth 8-7129] Port aBus[255] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[254] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[253] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[252] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[251] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[250] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[249] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[248] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[247] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[246] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[245] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[244] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[243] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[242] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[241] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[240] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[239] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[238] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[237] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[236] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[235] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[234] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[233] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[232] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[231] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[230] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[229] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[228] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[227] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[226] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[225] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[224] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[223] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[222] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[221] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[220] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[219] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[218] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[217] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[216] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[215] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[214] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[213] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[212] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[211] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[210] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[209] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[208] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[207] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[206] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[205] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[204] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[203] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[202] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[201] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[200] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[199] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[198] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[197] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[196] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[195] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[194] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[193] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[192] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[191] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[190] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[189] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[188] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[187] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[186] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[185] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[184] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[183] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[182] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[181] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[180] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[179] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[178] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[177] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[176] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[175] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[174] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[173] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[172] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[171] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[170] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[169] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[168] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[167] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[166] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[165] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[164] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[163] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[162] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[161] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[160] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[159] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[158] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[157] in module scaleOutPod__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aBus[156] in module scaleOutPod__parameterized2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1494.828 ; gain = 704.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1494.828 ; gain = 704.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1494.828 ; gain = 704.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1494.828 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/constraints/nexysA7.xdc]
+Finished Parsing XDC File [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/constraints/nexysA7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/constraints/nexysA7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexysTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nexysTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1542.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.953 ; gain = 752.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.953 ; gain = 752.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.953 ; gain = 752.125
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'capturedValue_reg' and it is trimmed from '24' to '15' bits. [C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/nexysTop.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1542.953 ; gain = 752.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input 1536 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1572.203 ; gain = 781.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1725.855 ; gain = 935.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1735.391 ; gain = 944.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1735.914 ; gain = 945.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |FDRE |     2|
+|4     |IBUF |     2|
+|5     |OBUF |    16|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 257 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2011.398 ; gain = 1172.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2011.398 ; gain = 1220.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2020.574 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2024.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d3a3ed60
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+31 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 2024.227 ; gain = 1432.035
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2024.227 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/build/hybridNexys.runs/synth_1/nexysTop.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file nexysTop_utilization_synth.rpt -pb nexysTop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 22:18:32 2026...

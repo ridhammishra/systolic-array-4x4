@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/rtl/matrixEngine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scaleUpArray
+INFO: [VRFC 10-311] analyzing module scaleOutPod
+INFO: [VRFC 10-311] analyzing module scaleOutArray
+INFO: [VRFC 10-311] analyzing module hybridCore
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/tb/hybridTb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hybridTb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ridha/Downloads/HybridBest_NexysA7_100T_Verilog/HybridBestNexysVerilog/build/hybridNexys.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
